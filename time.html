@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title></title>	
+ <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+<style type="text/css">
+.main{
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 20%;
+}
+p{
+	font-size: 5em;
+	color: lightpink;
+	text-shadow: 1px 1px 1px blue;
+}
+</style>
+<script>
+function wH(){
+	var dd= new Date();
+	var dc=new Date(2018,10,10);
+	document.getElementById('demo').innerHTML=("我们在一起"+parseInt((dc-dd)/24/60/60/1000)+"天啦");
+	}
+</script>
+</head>
+<body style="background: skyblue;">
+	<div class="main">
+ <button onclick="wH()" class="btn btn-default btn-lg">点我你看看</button>
+<br>
+<br>
+<br>
+<br>
+ <p id="demo"></p>
+ </div>
+</body>
+</html>
