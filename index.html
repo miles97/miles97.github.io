@@ -18,9 +18,9 @@ p{
 </style>
 <script>
 function wH(){
-	var dd= new Date();
-	var dc=new Date(2018,10,10);
-	document.getElementById('demo').innerHTML=("我们在一起"+parseInt((dc-dd)/24/60/60/1000)+"天啦");
+	var dd= new Date().getTime();
+	var dc=new Date(2018,9,10).getTime();
+	document.getElementById('demo').innerHTML=("我们在一起"+parseInt((dd-dc)/24/60/60/1000)+"天啦");
 	}
 </script>
 </head>
