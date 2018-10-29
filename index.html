@@ -3,18 +3,37 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <title></title>	
- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+ <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <style type="text/css">
 .main{
 	text-align: center;
 	vertical-align: middle;
-	margin-top: 20%;
+	/*margin-bottom: 20%;*/
+	/*padding-top: 70%;*/
 }
-p{
+h1{
 	font-size: 5em;
 	color: lightpink;
 	text-shadow: 1px 1px 1px blue;
 }
+div h3{
+	color: lightpink;
+}
+
+div p{
+	font-size: 3em;
+	word-break: break-all;
+	color: white;
+	text-shadow: none;
+}
+/*@media all and(min-width: 375px;){
+	button .btn-lg{
+		width: 100px;
+		height: 300px;
+	}
+}*/
+
 </style>
 <script>
 function wH(){
@@ -22,16 +41,58 @@ function wH(){
 	var dc=new Date(2018,9,10).getTime();
 	document.getElementById('demo').innerHTML=("我们在一起"+parseInt((dd-dc)/24/60/60/1000)+"天啦");
 	}
+
+	$(document).ready(function(){
+		$("#bt").click(function(){
+			$("#text").fadeIn(2000);
+		});
+});
+
 </script>
 </head>
 <body style="background: skyblue;">
-	<div class="main">
- <button onclick="wH()" class="btn btn-default btn-lg">点我你看看</button>
-<br>
-<br>
-<br>
-<br>
- <p id="demo"></p>
+
+<div class="main">
+
+<button onclick="wH()" class="btn btn-info btn-lg btn-block" style="position: absolute;bottom: 0;margin-bottom: 100px;height: 200px;">点击这里</button>
+
+<button id="bt" class="btn btn-danger btn-lg btn-block" style="position: absolute;bottom: 200px;margin-bottom: 100px;height: 200px;">点击有惊喜</button>
+
+ <h1 id="demo"></h1>
+
+ <div style="display: none;" id="text">
+ <h3>一</h3>
+ 	<p>
+北风起时
+愿你有炉火可偎
+有老酒可斟
+也会有一个温暖的人
+可以相互依傍
+	</p>
+<h3>二</h3>
+	<p>晚间的夜来香
+默默将浓郁的气息
+递送到你的床前
+不为你的一声感谢
+只为你有个好梦
+	</p>
+<h3>三</h3>
+<p>
+初夏的傍晚，
+你在门口削着竹篾
+我在灶前添着柴火
+火堆 ，竹子
+发出噼里啪啦的声音
+也正是时光溜走的声音。</p>
+<h3>四</h3>
+<p>赤裸裸的河水
+赤裸裸的天空 
+赤裸裸的思念 
+填满赤裸裸的心 。
+</p>
  </div>
+ </div>
+
+
 </body>
 </html>
