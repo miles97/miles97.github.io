@@ -16,5 +16,5 @@
 
 ## 七月更新技术栈以及考虑全平台适配，linux ,mac OS , IOS , Android , windows
 
-## 2020/4/1前考虑使用golang||node.js||写一些小服务
+## 2020/4/1前考虑使用golang||node.js写一些小服务
 
